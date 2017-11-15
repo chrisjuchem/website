@@ -40,3 +40,5 @@ gem 'puma'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'dotenv-rails', groups: [:development, :test]

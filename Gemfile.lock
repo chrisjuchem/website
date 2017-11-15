@@ -50,6 +50,10 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
+    dotenv (2.2.1)
+    dotenv-rails (2.2.1)
+      dotenv (= 2.2.1)
+      railties (>= 3.2, < 5.2)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.7)
@@ -156,6 +160,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-jdbcpostgresql-adapter
   coffee-rails (~> 4.0.0)
+  dotenv-rails
   jbuilder (~> 2.0)
   jquery-rails
   puma
@@ -172,4 +177,4 @@ RUBY VERSION
    ruby 2.3.1p0 (jruby 9.1.8.0)
 
 BUNDLED WITH
-   1.13.1
+   1.16.0
