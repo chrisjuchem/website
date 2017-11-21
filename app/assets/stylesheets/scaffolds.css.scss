@@ -1,8 +1,12 @@
+@import 'colors';
+
 body {
   background-color: #fff;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
+  margin: 0px;
+  background-color: $bg-color;
   line-height: 18px;
 }
 

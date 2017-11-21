@@ -42,3 +42,4 @@ gem 'puma'
 # gem 'debugger', group: [:development, :test]
 
 gem 'dotenv-rails', groups: [:development, :test]
+gem "haml-rails", "~> 1.0"
