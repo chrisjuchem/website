@@ -1,0 +1,27 @@
+@import '_colors';
+
+.nav-item {
+  padding: 18px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.nav-bar {
+  background-color: $nav-bg-color;
+  display: flex;
+}
+
+.logo {
+  color: $logo-color !important;
+  font-size: 2.0em;
+  letter-spacing: -.05em;
+  padding-left: 18px;
+}
+
+.nav-link {
+  &:hover {
+    background-color: $nav-hover-color;
+  }
+  clip-path: polygon(0 100%, 86% 100%, 100% 0, 14% 0);
+  color: $nav-category-color !important;
+}

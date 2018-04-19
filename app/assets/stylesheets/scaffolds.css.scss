@@ -2,7 +2,7 @@
 
 body {
   background-color: #fff;
-  color: #333;
+  color: $text-color;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   margin: 0px;
@@ -23,13 +23,12 @@ pre {
 }
 
 a {
-  color: #000;
+  color: $text-color;
   &:visited {
-    color: #666;
+    color: $link-visited-color;
   }
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: $link-hover-color;
   }
 }
 
