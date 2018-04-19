@@ -4,17 +4,34 @@
 # or operating system, you probably want to add a global ignore instead:
 #   git config --global core.excludesfile '~/.gitignore_global'
 
-# Ignore bundler config and Heroku local config.
+# Ignore bundler config.
 /.bundle
-.env
+
+# Ignore local config.
+.env 
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
 # Ignore all logfiles and tempfiles.
-/log
-/tmp
-/bin
+/log/*
+/tmp/*
+/bin/*
+!/log/.keep
+!/tmp/.keep
 
+# Ignore uploaded files in development
+/storage/*
+
+/node_modules
+/yarn-error.log
+
+/public/assets
+.byebug_history
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# IDE files
 /.idea

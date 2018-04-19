@@ -59,7 +59,7 @@ test:
   <<: *default
   database: chrisjuchem_website_test
   username: postgres
-  password: password
+  password: <%= ENV['DATABASE_PASSWORD'] %>
 
 
 # As with config/secrets.yml, you never want to store sensitive information,
