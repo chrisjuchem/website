@@ -1,27 +1,55 @@
 @import '_colors';
 
-.nav-item {
-  padding: 18px 30px;
-  display: inline-block;
-  text-decoration: none;
-}
-
 .nav-bar {
   background-color: $nav-bg-color;
   display: flex;
+  white-space: nowrap;
 }
 
-.logo {
-  color: $logo-color !important;
+.nav-padded {
+  padding: 18px 26px;
+  display: inline-block;
+}
+
+#logo {
+  color: $logo-color;
   font-size: 2.0em;
   letter-spacing: -.05em;
   padding-left: 18px;
+  text-decoration: none;
 }
 
-.nav-link {
-  &:hover {
-    background-color: $nav-hover-color;
+.nav-section {
+  & a {
+    &, &:visited {
+      color: $nav-text-color;
+    }
+    text-decoration: none;
+   // display: block;
+    &:hover {
+      background-color: $nav-hover-color;
+    }
   }
-  clip-path: polygon(0 100%, 86% 100%, 100% 0, 14% 0);
-  color: $nav-category-color !important;
 }
+
+$skew:12px;
+.nav-link {
+  display: block;
+  clip-path: polygon(0 100%, calc(100% - #{$skew}) 100%, 100% 0, $skew 0);
+}
+
+.dropdown {
+  display: none;
+  .nav-link:hover ~ &, &:hover {
+    display: flex;
+  }
+
+  flex-direction: column;
+  position:absolute;
+  background-color: #999;
+  & a {
+    float: none;
+    padding: 10px;
+  }
+}
+

@@ -1,7 +1,14 @@
 .nav-bar
-  %a.nav-item.logo{href:'/'}
+  %a.nav-padded#logo{href:'/'}
     = 'chris juchem'
-  %a.nav-item.nav-link{href:'/welcome'}
-    = 'welcome'
-  .nav-item.nav-link
-    = 'lmao'
+  = render 'navbar/navlink', title: "About", link:'/about',
+        dropdown:[["About Me", '/about/me'],
+                  ["About this site", '/about/site']]
+  = render 'navbar/navlink', title: "Projects", link:'/projects',
+        dropdown:[["Node", '/projects/node'],
+                  ["Eternal2D", '/projects/eternal2d'],
+                  ["If At First", '/projects/ifatfirst'],
+                  ["Spoiled Tomatillos", '/projects/spoiledtomatillos'],
+                  ["Cakbot", '/projects/cakbot'],
+                  ["Dota X Hearthstone", '/projects/dotahs']]
+  = render 'navbar/navlink', title: "Lorem Ipsum", link:'#'

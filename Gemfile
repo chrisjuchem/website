@@ -7,6 +7,9 @@ gem 'rails', '~> 5.2'
 # Use postgresql as the database for Active Record
 gem 'activerecord-postgresql-adapter'
 gem 'rails_12factor', group: :production
+
+# Use HAML for HTML
+gem 'haml-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
@@ -25,13 +28,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
-
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :jruby]
 
 gem 'puma'
 
@@ -42,8 +40,15 @@ gem 'puma'
 # gem 'debugger', group: [:development, :test]
 
 gem 'dotenv-rails', groups: [:development, :test]
-gem 'haml-rails'
-
 
 gem 'bootsnap'
-gem 'listen', group: :development
+
+group :development do
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring',        group: :development
+
+  gem 'listen', group: :development
+
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
