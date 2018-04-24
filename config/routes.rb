@@ -7,6 +7,9 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/welcome' => 'welcome#index'
 
+  get '/about/me' => 'about#me'
+  get '/about/site' => 'about#site'
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

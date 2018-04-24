@@ -7,9 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= render "navbar/navbar.html.haml"%>
-<%= yield %>
-
+  <%= render "navbar/navbar.html.haml"%>
+  <main>
+    <%= yield %>
+  </main>
 </body>
 </html>

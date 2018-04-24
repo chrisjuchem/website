@@ -4,6 +4,10 @@
   background-color: $nav-bg-color;
   display: flex;
   white-space: nowrap;
+  font-size: 14px;
+  line-height: 14px;
+  position: sticky;
+  top: 0;
 }
 
 .nav-padded {
@@ -13,8 +17,9 @@
 
 #logo {
   color: $logo-color;
-  font-size: 2.0em;
-  letter-spacing: -.05em;
+  font-size: 28px;
+  letter-spacing: -1.5px;
+  //letter-spacing: -.05em;
   padding-left: 18px;
   text-decoration: none;
 }

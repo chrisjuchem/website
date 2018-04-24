@@ -1,0 +1,28 @@
+.writeup {
+  max-width: 900px;
+  margin: auto;
+}
+
+.page-title {
+  font-size: 2.75em;
+  margin: 0.6em 0;
+  font-weight: bold;
+}
+
+.section {}
+
+.section-title {
+  margin-top: 1em;
+  font-size: 1.5em;
+  font-style: italic;
+
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.section-text {
+  & p{
+     margin: 0.7em 0;
+  }
+  margin-bottom: 1em;
+}
