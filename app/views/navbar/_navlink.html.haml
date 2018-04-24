@@ -5,4 +5,4 @@
     - unless defined? dropdown
       - dropdown = []
     - dropdown.each do |entry|
-      = link_to(entry[0], entry[1])
+      = link_to(entry[:name], entry[:url])

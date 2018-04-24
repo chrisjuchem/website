@@ -1,14 +1,6 @@
 .nav-bar
   %a.nav-padded#logo{href:'/'}
     = 'chris juchem'
-  = render 'navbar/navlink', title: "About", link:'/about',
-        dropdown:[["About Me", '/about/me'],
-                  ["About this site", '/about/site']]
-  = render 'navbar/navlink', title: "Projects", link:'/projects',
-        dropdown:[["Node", '/projects/node'],
-                  ["Eternal2D", '/projects/eternal2d'],
-                  ["If At First", '/projects/ifatfirst'],
-                  ["Spoiled Tomatillos", '/projects/spoiledtomatillos'],
-                  ["Cakbot", '/projects/cakbot'],
-                  ["Dota/Hearthstone Crossover", '/projects/dotahs']]
+  = render 'navbar/navlink', title: "About", link:'/about', dropdown:AboutController.pages
+  = render 'navbar/navlink', title: "Projects", link:'/projects', dropdown:ProjectsController.pages
   = render 'navbar/navlink', title: "Lorem Ipsum", link:'#'

@@ -7,8 +7,18 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get '/welcome' => 'welcome#index'
 
+  get '/about' => 'about#index'
   get '/about/me' => 'about#me'
   get '/about/site' => 'about#site'
+
+
+  get '/projects' => 'projects#index'
+  get '/projects/node' => 'projects#node'
+  get '/projects/eternal2d' => 'projects#eternal2d'
+  get '/projects/ifatfirst' => 'projects#ifatfirst'
+  get '/projects/spoiledtomatillos' => 'projects#spoiledtomatillos'
+  get '/projects/cakbot.html.haml' => 'projects#cakbot.html.haml'
+  get '/projects/dotahs' => 'projects#dotahs'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
