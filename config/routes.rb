@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   get '/projects/eternal2d' => 'projects#eternal2d'
   get '/projects/ifatfirst' => 'projects#ifatfirst'
   get '/projects/spoiledtomatillos' => 'projects#spoiledtomatillos'
-  get '/projects/cakbot.html.haml' => 'projects#cakbot.html.haml'
+  get '/projects/cakbot.html.haml' => 'projects#cakbot'
   get '/projects/dotahs' => 'projects#dotahs'
 
   # Example of regular route:

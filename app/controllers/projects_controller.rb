@@ -26,7 +26,7 @@ class ProjectsController < ApplicationController
      {name:"Eternal2D", url:'/projects/eternal2d'},
      {name:"If At First", url:'/projects/ifatfirst'},
      {name:"Spoiled Tomatillos", url:'/projects/spoiledtomatillos'},
-     {name:"Cakbot", url:'/projects/cakbot.html.haml'},
+     {name:"Cakbot", url:'/projects/cakbot'},
      {name:"Dota/Hearthstone Crossover", url:'/projects/dotahs'}]
   end
 end
